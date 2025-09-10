@@ -1,0 +1,37 @@
+# cuda
+wget https://developer.download.nvidia.com/compute/cuda/12.8.0/local_installers/cuda_12.8.0_570.86.10_linux.run
+sudo sh cuda_12.8.0_570.86.10_linux.run
+echo 'export PATH=/usr/local/cuda-12.4/bin:$PATH' >> ~/.zshrc        # CUDA 12.4 命令路径
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64:$LD_LIBRARY_PATH' >> ~/.zshrc  # CUDA 运行库路径
+echo 'export LIBRARY_PATH=/usr/local/cuda-12.4/lib64:$LIBRARY_PATH' >> ~/.zshrc        # CUDA 编译库路径
+nvcc --verision
+
+# miniconda
+wget --no-proxy https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+./Miniconda3-latest-Linux-x86_64.sh
+
+# isaacsim
+conda create -n env_isaacsim python=3.10
+conda activate env_isaacsim
+pip install "isaacsim[all]==4.5.0" --extra-index-url https://pypi.nvidia.com
+pip install "isaacsim[extscache]==4.5.0" --extra-index-url https://pypi.nvidia.com
+
+# ros
+sudo apt-get install -y 
+ros-humble-ros-testing 
+ros-humble-moveit 
+ros-humble-moveit-common 
+ros-humble-control-toolbox 
+ros-humble-ros2-control 
+ros-humble-ros2-controllers
+ros-humble-ros-base 
+ros-humble-rmw-fastrtps-cpp 
+ros-humble-rmw-cyclonedds-cpp
+
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+export LD_LIBRARY_PATH=/opt/ros/humble/lib:$LD_LIBRARY_PATH
+export ROS_DOMAIN_ID=0
+
+pip install catkin_pkg pandas pyarrow
+
