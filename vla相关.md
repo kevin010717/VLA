@@ -7,6 +7,7 @@
 | CodeWithGPU  | [CodeWithGPU](https://www.codewithgpu.com/image)             |                                    |
 | AutoDL       | [AutoDL](https://www.autodl.com/machine/list)                |                                    |
 | Zread        | [Zread](https://zread.ai/)                                   |                                    |
+| lmarena      | [lmarena](https://lmarena.ai/leaderboard)                    |                                    |
 | 论文翻译     | [论文翻译](https://www.julyedu.com/#exercise-container)      |                                    |
 | Aizex        | [Aizex](https://aizex.net/plusPool)                          |                                    |
 | 尤里卡       | [尤里卡](https://dcntch0yoc4t.feishu.cn/next/messenger)      |                                    |
@@ -55,12 +56,14 @@
 | 模型-molmoact            | [molmoact](https://allenai.org/blog/molmoact)                |                                                   |
 | 模型-GraspVLA            | [GraspVLA](https://github.com/PKU-EPIC/GraspVLA)             |                                                   |
 | 模型-Uni-NaVid           | [Uni-NaVid](https://pku-epic.github.io/Uni-NaVid/)           |                                                   |
+| 模型-hil-serl            | [hil-serl](https://github.com/rail-berkeley/hil-serl)        |                                                   |
 |                          |                                                              |                                                   |
 | 数据集-open_x_embodiment | [open_x_embodiment](https://github.com/google-deepmind/open_x_embodiment) |                                                   |
 | 数据集-libero            | [GitHub](https://github.com/Lifelong-Robot-Learning/LIBERO)  |                                                   |
 | 数据集-ArtVIP            | [ArtVIP](https://huggingface.co/datasets/x-humanoid-robomind/ArtVIP/tree/main) |                                                   |
-| work-r-labs              | [work-r-labs](https://github.com/work-r-labs/robots)         |                                                   |
-| DROID                    | [DROID](https://droid-dataset.github.io/)                    |                                                   |
+| 数据集-work-r-labs       | [work-r-labs](https://github.com/work-r-labs/robots)         |                                                   |
+| 数据集-DROID             | [DROID](https://droid-dataset.github.io/)                    |                                                   |
+| 数据集-Objaverse         | [Objaverse](https://objaverse.allenai.org/)                  |                                                   |
 |                          |                                                              |                                                   |
 | 公司-宇树科技            | [宇树科技](https://www.unitree.com/cn)                       |                                                   |
 | 公司-上海智元            | [上海智元](https://www.zhiyuan-robot.com/)                   |                                                   |
