@@ -34,11 +34,11 @@ python -m lerobot.record \
     --teleop.id=my_awesome_leader_arm \
     --display_data=true \
     --dataset.repo_id=seeedstudio123/test \
-    --dataset.num_episodes=5 \
+    --dataset.num_episodes=2 \
     --dataset.single_task="Grab the black cube" \
     --dataset.push_to_hub=false \
-    --dataset.episode_time_s=30 \
-    --dataset.reset_time_s=30 
+    --dataset.episode_time_s=10 \
+    --dataset.reset_time_s=10
 
 python -m lerobot.scripts.visualize_dataset_html   --repo-id seeedstudio123/test 
 
