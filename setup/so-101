@@ -1,3 +1,9 @@
+# todo
+1.数采，分批
+2.act训推
+3.pi0训推
+4.Gr00t N1.5训推
+
 主臂端口：/dev/ttyACM0
 从臂端口：/dev/ttyACM1
 /dev/video2
