@@ -55,6 +55,7 @@ python -m lerobot.replay \
     --dataset.repo_id=seeedstudio123/test \
     --dataset.episode=0
 
+
 python -m lerobot.scripts.train \
   --dataset.repo_id=seeedstudio123/test \
   --policy.type=act \
@@ -64,3 +65,19 @@ python -m lerobot.scripts.train \
   --wandb.enable=false \
   --policy.push_to_hub=false\
   --steps=300000 
+
+huggingface-cli login --token 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 --add-to-git-credential
+
+HF_USER=$(huggingface-cli whoami | head -n 1)
+echo $HF_USER
+
+    --repo-id ${HF_USER}/so100_test \
+    --warmup-time-s 5 \
+    --force-override 1 \
+    --resume 0 \
+    --robot-path lerobot/configs/robot/so100.yaml \
+    --local-files-only 1 \
+    --root data \
+
+python lerobot/scripts/visualize_dataset_html.py \
+  --repo-id ${HF_USER}/so100_test
